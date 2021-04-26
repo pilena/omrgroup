@@ -1,0 +1,168 @@
+#slideshow{
+	background: $color-neutral;
+	line-height: 1;
+	position: relative;
+	height: 100vh;
+	.control {
+		width: 100%;
+		height: calc(100% - $space-xsm);
+		position: absolute;
+		top:$space-xsm;
+		margin: 0;
+		z-index: 99;
+		display: block;
+		button {
+			background-color: transparent;
+			border: 0;
+			color:$color-brand-two;
+			cursor: pointer;
+			height: calc(100% - $space-xsm);
+			opacity: 1;
+			font-size: 50vh;
+			width: 160%;
+		}
+	}
+	a {
+		color: $color-background;
+		&:hover {
+			color: $color-background-alt;
+		}
+	}
+#previous{
+  	float: left;
+}
+#next{
+  	float: right;
+}
+#slides {
+	padding: 0!important;
+	margin: 0;
+	overflow: hidden;
+	li {
+		position: absolute;
+		clear:both;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+		opacity: 0;
+		font-size: 50vh;
+		line-height: 100vh;
+		text-align: center;
+		color:$color-brand-one;
+	}
+	.slideActive {
+		opacity: 1;
+		animation: fadein .8s;
+		-moz-animation: fadein .8s; /* Firefox */
+		-webkit-animation: fadein .8s; /* Safari and Chrome */
+		-o-animation: fadein .8s; /* Opera */
+		z-index: 2;
+	}
+}
+.pager {
+	height: 100vh;
+	position: relative;
+	 ul {
+		display: inline-flex;
+		padding: 0!important;
+		right: $space-sm;
+		bottom: $space-sm;
+		position: absolute;
+		z-index: 99;
+		justify-content: flex-end;
+		li.slideActive {
+		a {
+			color: $color-background;
+			display: block;
+			padding-left: $padding;
+		}
+		span {
+			display:inline-flex;
+			align-items: center;
+			background: $color-brand-two;
+			border-radius: 50%;
+			text-align: center;
+			color: $color-background;
+			text-decoration: none;
+			height: 20px;
+			width: 20px;
+		}
+		}
+		li {
+			display:inline-flex;
+			align-items: center;
+			cursor:pointer;
+			color: $color-background;
+			a {
+				display: none;
+			}
+			span {
+				display:inline-flex;
+				align-items: center;
+				background: $color-brand-one-third;
+				border-radius: 50%;
+				text-align: center;
+				text-decoration: none;
+				height: $padding;
+				width: $padding;
+			}
+		}
+	}
+}
+	.progressbar{
+		position:absolute;
+		bottom: 0;
+		width:100%;
+		height:4px;
+		background: none;
+		z-index: 3;
+		&-progress{
+			width:0;
+			height:4px;
+			-webkit-animation: progress 7s infinite;
+			background: $color-brand-two;
+		}
+	}
+	@-webkit-keyframes progress {
+		0% {width: 0%;}
+		100% {width: 100%;}
+	}
+	@keyframes fadein {
+		from {
+			opacity:0;
+		}
+		to {
+			opacity:1;
+		}
+		}
+		@-moz-keyframes fadein { /* Firefox */
+		from {
+			opacity:0;
+		}
+		to {
+			opacity:1;
+		}
+		}
+		@-webkit-keyframes fadein { /* Safari and Chrome */
+		from {
+			opacity:0;
+		}
+		to {
+			opacity:1;
+		}
+		}
+		@-o-keyframes fadein { /* Opera */
+		from {
+			opacity:0;
+		}
+		to {
+			opacity: 1;
+		}
+		}
+
+}

@@ -1,0 +1,133 @@
+.post {
+    &__top {
+        position:relative;
+        min-height: 400px;
+        &-inner {
+            @include flex-nowrap(flex, column, center, center);
+            min-height: fit-content;
+            h3 {
+                color: $color-background;
+            }
+            .category {
+                border-radius: 4px;
+                background: $color-neutral;
+                color: $color-brand-one;
+                display: inline-flex;
+                align-items: center;
+                margin: 0 auto;
+                padding: 4px 6px;
+                text-align: center;
+                min-height: 24px;
+                width: fit-content;
+            }
+            .date {
+                color: $color-background;
+                font-family: $font-family;
+                font-weight: $font-weight-bold;
+            }
+            &--center {
+                @include flex(flex, row, wrap, center, center);
+            }
+        }
+        &-breadcrumbs {
+            @include flex(flex, row, wrap, center, center);
+            background: $color-brand-one;
+            color: $color-brand-one-third;
+            font-family: $font-family-alt;
+            font-size: $font-size-small;
+            padding: 16px;
+            width: 100%;
+            .current-item {
+                color: $color-brand-two;
+                padding: 8px;
+            }
+            i {
+                font-size: 24px;
+            }
+            a {
+                padding: 8px;
+                span {
+                    color: $color-brand-one-third;
+                }
+            }
+        }
+    }
+    &__sidebar {
+        padding-right: 48px;
+        @include breakpoint (sm) {
+            padding-right: 0;
+        }
+        &--wrap {
+            background: $color-brand-one;
+            padding: 64px 48px;
+            &-alt {
+                max-width:364px;
+                h5 {
+                    margin-top: 8px;
+                }
+
+            }
+            h4 {
+                color: $color-brand-two;
+                padding-bottom:0!important;
+            }
+            p {
+                color: $color-background;
+                margin:24px 0;
+            }
+        }
+    }
+    &__tags {
+        &-tag {
+            display: block;
+        }
+        a {
+            @include flex(inline-flex, row, wrap, center, center);
+            background: $color-brand-one-second;
+            color: $color-brand-two;
+            padding: 8px;
+            font-size: 10px;
+            text-transform: uppercase;
+            margin-right: 8px;
+        }
+    }
+    &__author {
+        @include flex(flex, row, wrap, space-between, center);
+        padding: 48px 0;
+        div:first-of-type {
+            margin-right: 24px;
+        }
+        div:last-of-type {
+            h5,.overline {
+                margin: 0;
+            }
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+}
+.posts {
+    @include flex(flex, column, wrap, center, center);
+    padding-top: 224px;
+    @include breakpoint (sm) {
+        padding-top: 144px;
+    }
+    &__list {
+        &-image {
+            height: 320px;
+            width: 524px;
+            @include breakpoint (xs) {
+                width: 100%;
+                max-width: 524px;
+            }
+        }
+        &-details {
+            @include flex(flex, row, wrap, flex-start, center);
+            margin-top: 28px;
+        }
+        &-wrap {
+            @include flex(flex, column, wrap, center, center);
+        }
+    }
+}

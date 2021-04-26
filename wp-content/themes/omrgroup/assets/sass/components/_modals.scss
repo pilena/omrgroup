@@ -1,0 +1,47 @@
+
+[data-tooltip] {
+    align-items: center;   
+    display: inline-flex; 
+    position: relative;
+    font-size: $font-size;
+    font-family: $font-family;
+    
+    &::before,
+    &::after {
+      opacity: 0;
+      visibility: hidden;
+      margin-top: -0.5em;
+    }
+
+    &::before {
+      content: attr(data-tooltip);
+      display: flex;
+      position: absolute;
+      top: -46px;
+      left: 50%;
+      transform:translate(-50%, 0);
+      text-align: center;
+      background: $color-brand-one;
+      color: $color-background;
+      font-size: $font-size;
+      line-height: 1.1;
+      padding: 8px;
+      width: max-content;
+    }
+    
+    &::after {
+      content: "";
+      border: 10px solid transparent;
+      border-top-color: $color-brand-one;
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform:translate(-50%,0);
+    }
+    
+    &:hover::before,
+    &:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }

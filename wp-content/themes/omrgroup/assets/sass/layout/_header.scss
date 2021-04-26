@@ -1,0 +1,30 @@
+.header {
+    background: $color-background;
+    box-shadow: $box-shadow;
+    position: fixed;
+    padding: 0 $padding;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 10;
+    @include flex(flex, row, wrap, space-between, center);
+    &__logo {
+        @include flex-nowrap(flex, row, flex-start, center);
+        &-img {
+            width: fit-content;
+            height: 48px;
+        }
+    }
+    &--transparent {
+        background:transparent!important;
+        position: fixed;
+        padding: 0 $padding;
+        top: 0;
+        left: 0;
+        min-height: 80px;
+        width: 100%;
+        z-index: 10;
+        @include flex(flex, row, wrap, space-between, center);
+    }
+}

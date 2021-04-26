@@ -1,0 +1,1296 @@
+.button {
+    &__square {
+        &--large {
+            &-primary {
+                background: $color-button;
+                color:$color-background-alt!important;
+                padding: 20px 24px;
+                height: 56px;
+                width: max-content;
+                /* Button Inner */
+                @include flex-nowrap(inline-flex, row, center, center, center);
+                font-style: $font-style-normal;
+                font-size: $font-size;
+                line-height: $line-height;
+                letter-spacing: 0.016em;
+                &:hover {
+                    background: $color-button-hover;
+                    border-color: $color-brand-two;
+                    color: $color-brand-one!important;
+                    transition: .3s;
+                }
+                &-iconR {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    padding: 20px 24px;
+                    height: 56px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:after {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+                &-iconL {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    padding: 20px 24px;
+                    height: 56px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:before {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-right: 20px;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+                &-icon {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    min-width: 56px;
+                    height: 56px;
+                     /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    &:after {
+                        content: $icon-secondary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin: 0 auto;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+            }
+            &-secondary {
+                background: $color-transparent;
+                border: $border-button;
+                padding: 19px 24px;
+                height: 56px;
+                width: max-content;
+                /* Button Inner */
+                @include flex-nowrap(inline-flex, row, center, center, center);
+                font-style: $font-style-normal;
+                font-size: $font-size;
+                line-height: $line-height;
+                letter-spacing: 0.016em;
+                &:hover {
+                    background: $color-button;
+                    border-color: $color-button;
+                    color: $color-background!important;
+                    transition: .3s;
+                }
+                &-iconR {
+                    background: $color-transparent;
+                    border: $border-button;
+                    padding: 20px 24px;
+                    height: 56px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:after {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;
+                    }
+                }
+                &-iconL {
+                    background: $color-transparent;
+                    border: $border-button;
+                    padding: 20px 24px;
+                    height: 56px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:before {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-right: 20px;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;
+                    }
+                }
+                &-icon {
+                    background: $color-transparent;
+                    border: $border-button;
+                    min-width: 56px;
+                    height: 56px;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    &:after {
+                        content: $icon-secondary-alt;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin: 0 auto;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+        &--small {
+            &-primary {
+                background: $color-button;
+                color:$color-background-alt!important;
+                color: $color-background-alt;
+                padding: 12px 16px;
+                height: 40px;
+                width: max-content;
+                /* Button Inner */
+                @include flex-nowrap(inline-flex, row, center, center, center);
+                font-style: $font-style-normal;
+                font-size: $font-size;
+                line-height: $line-height;
+                letter-spacing: 0.016em;
+                &:hover {
+                    background: $color-button-hover;
+                    border-color: $color-brand-two;
+                    color: $color-brand-one!important;
+                    transition: .3s;
+                }
+                &-iconR {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    color: $color-background-alt;
+                    padding: 12px 16px;
+                    height: 40px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:after {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+                &-iconL {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    padding: 12px 16px;
+                    height: 40px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:before {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-right: 20px;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+                &-icon {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    min-width: 40px;
+                    height: 40px;
+                     /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    &:after {
+                        content: $icon-secondary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin: 0 auto;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+            }
+            &-secondary {
+                background: $color-transparent;
+                border: $border-button;
+                padding: 12px 16px;
+                height: 40px;
+                width: max-content;
+                /* Button Inner */
+                @include flex-nowrap(inline-flex, row, center, center, center);
+                font-style: $font-style-normal;
+                font-size: $font-size;
+                line-height: $line-height;
+                letter-spacing: 0.016em;
+                &:hover {
+                    background: $color-button;
+                    border-color: $color-button;
+                    color: $color-background!important;
+                    transition: .3s;
+                }
+                &-iconR {
+                    background: $color-transparent;
+                    border: $border-button;
+                    padding: 12px 16px;
+                    height: 40px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:after {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;
+                    }
+                }
+                &-iconL {
+                    background: $color-transparent;
+                    border: $border-button;
+                    padding: 12px 16px;
+                    height: 40px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:before {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-right: 20px;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;
+                    }
+                }
+                &-icon {
+                    background: $color-transparent;
+                    border: $border-button;
+                    min-width: 48px;
+                    height: 40px;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    &:after {
+                        content: $icon-secondary-alt;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin: 0 auto;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+    &__round {
+        &--large {
+            &-primary {
+                background: $color-button;
+                border-radius: 6px;
+                color:$color-background-alt!important;
+                padding: 20px 24px;
+                height: 56px;
+                width: max-content;
+                /* Button Inner */
+                @include flex-nowrap(inline-flex, row, center, center, center);
+                font-style: $font-style-normal;
+                font-size: $font-size;
+                line-height: $line-height;
+                letter-spacing: 0.016em;
+                &:hover {
+                    background: $color-button-hover;
+                    border-color: $color-brand-two;
+                    color: $color-brand-one!important;
+                    transition: .3s;
+                }
+                &-iconR {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    border-radius: 6px;
+                    padding: 20px 24px;
+                    height: 56px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:after {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+                &-iconL {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    border-radius: 6px;
+                    padding: 20px 24px;
+                    height: 56px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:before {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-right: 20px;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+                &-icon {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    border-radius: 6px;
+                    min-width: 56px;
+                    height: 56px;
+                     /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    &:after {
+                        content: $icon-secondary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin: 0 auto;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+            }
+            &-secondary {
+                background: $color-transparent;
+                border: $border-button;
+                border-radius: 6px;
+                padding: 20px 24px;
+                height: 56px;
+                width: max-content;
+                /* Button Inner */
+                @include flex-nowrap(inline-flex, row, center, center, center);
+                font-style: $font-style-normal;
+                font-size: $font-size;
+                line-height: $line-height;
+                letter-spacing: 0.016em;
+                &:hover {
+                    background: $color-button;
+                    border-color: $color-button;
+                    color: $color-background!important;
+                    transition: .3s;
+                }
+                &-iconR {
+                    background: $color-transparent;
+                    border: $border-button;
+                    border-radius: 6px;
+                    padding: 20px 24px;
+                    height: 56px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:after {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;   
+                    }
+                }
+                &-iconL {
+                    background: $color-transparent;
+                    border: $border-button;
+                    border-radius: 6px;
+                    padding: 20px 24px;
+                    height: 56px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:before {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-right: 20px;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;   
+                    }
+                }
+                &-icon {
+                    background: $color-transparent;
+                    border: $border-button;
+                    border-radius: 6px;
+                    min-width: 56px;
+                    height: 56px;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    &:after {
+                        content: $icon-secondary-alt;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin: 0 auto;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;        
+                    }
+                }
+            }
+        }
+        &--small {
+            &-primary {
+                background: $color-button;
+                color:$color-background-alt!important;
+                border-radius: 6px;
+                padding: 12px 16px;
+                height: 40px;
+                width: max-content;
+                /* Button Inner */
+                @include flex-nowrap(inline-flex, row, center, center, center);
+                font-style: $font-style-normal;
+                font-size: $font-size;
+                line-height: $line-height;
+                letter-spacing: 0.016em;
+                &:hover {
+                    background: $color-button-hover;
+                    border-color: $color-brand-two;
+                    color: $color-brand-one!important;
+                    transition: .3s;
+                }
+                &-iconR {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    border-radius: 6px;
+                    padding: 12px 16px;
+                    height: 40px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:after {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+                &-iconL {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    border-radius: 6px;
+                    padding: 12px 16px;
+                    height: 40px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:before {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-right: 20px;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+                &-icon {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    border-radius: 6px;
+                    min-width: 40px;
+                    height: 40px;
+                     /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    &:after {
+                        content: $icon-secondary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin: 0 auto;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+            }
+            &-secondary {
+                background: $color-transparent;
+                border: $border-button;
+                border-radius: 6px;
+                padding: 12px 16px;
+                height: 40px;
+                width: max-content;
+                /* Button Inner */
+                @include flex-nowrap(inline-flex, row, center, center, center);
+                font-style: $font-style-normal;
+                font-size: $font-size;
+                line-height: $line-height;
+                letter-spacing: 0.016em;
+                &:hover {
+                    background: $color-button;
+                    border-color: $color-button;
+                    color: $color-background!important;
+                    transition: .3s;
+                }
+                &-iconR {
+                    background: $color-transparent;
+                    border: $border-button;
+                    border-radius: 6px;
+                    padding: 12px 16px;
+                    height: 40px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:after {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;                
+                    }
+                }
+                &-iconL {
+                    background: $color-transparent;
+                    border: $border-button;
+                    border-radius: 6px;
+                    padding: 12px 16px;
+                    height: 40px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:before {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-right: 20px;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;     
+                    }
+                }
+                &-icon {
+                    background: $color-transparent;
+                    border: $border-button;
+                    border-radius: 6px;
+                    min-width: 40px;
+                    height: 40px;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    &:after {
+                        content: $icon-secondary-alt;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin: 0 auto;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;         
+                    }
+                }
+            }
+        }
+    }
+    &__pill {
+        &--large {
+            &-primary {
+                background: $color-button;
+                color:$color-background-alt!important;
+                border-radius: 36px;
+                padding: 20px 24px;
+                height: 56px;
+                width: max-content;
+                /* Button Inner */
+                @include flex-nowrap(inline-flex, row, center, center, center);
+                font-style: $font-style-normal;
+                font-size: $font-size;
+                line-height: $line-height;
+                letter-spacing: 0.016em;
+                &:hover {
+                    background: $color-button-hover;
+                    border-color: $color-brand-two;
+                    color: $color-brand-one!important;
+                    transition: .3s;
+                }
+                &-iconR {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    border-radius: 36px;
+                    padding: 20px 24px;
+                    height: 56px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:after {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+                &-iconL {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    border-radius: 36px;
+                    padding: 20px 24px;
+                    height: 56px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:before {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-right: 20px;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+                &-icon {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    border-radius: 36px;
+                    min-width: 56px;
+                    height: 56px;
+                     /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    &:after {
+                        content: $icon-secondary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin: 0 auto;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+            }
+            &-secondary {
+                background: $color-transparent;
+                border: $border-button;
+                border-radius: 36px;
+                padding: 20px 24px;
+                height: 56px;
+                width: max-content;
+                /* Button Inner */
+                @include flex-nowrap(inline-flex, row, center, center, center);
+                font-style: $font-style-normal;
+                font-size: $font-size;
+                line-height: $line-height;
+                letter-spacing: 0.016em;
+                &:hover {
+                    background: $color-button;
+                    border-color: $color-button;
+                    color: $color-background!important;
+                    transition: .3s;
+                }
+                &-iconR {
+                    background: $color-transparent;
+                    border: $border-button;
+                    border-radius: 36px;
+                    padding: 20px 24px;
+                    height: 56px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:after {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;
+                    }
+                }
+                &-iconL {
+                    background: $color-transparent;
+                    border: $border-button;
+                    border-radius: 36px;
+                    padding: 20px 24px;
+                    height: 56px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:before {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-right: 20px;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;
+                    }
+                }
+                &-icon {
+                    background: $color-transparent;
+                    border: $border-button;
+                    border-radius: 36px;
+                    min-width: 56px;
+                    height: 56px;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    &:after {
+                        content: $icon-secondary-alt;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin: 0 auto;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+        &--small {
+            &-primary {
+                background: $color-button;
+                color:$color-background-alt!important;
+                border-radius: 36px;
+                padding: 12px 16px;
+                height: 40px;
+                width: max-content;
+                /* Button Inner */
+                @include flex-nowrap(inline-flex, row, center, center, center);
+                font-style: $font-style-normal;
+                font-size: $font-size;
+                line-height: $line-height;
+                letter-spacing: 0.016em;
+                &:hover {
+                    background: $color-button-hover;
+                    border-color: $color-brand-two;
+                    color: $color-brand-one!important;
+                    transition: .3s;
+                }
+                &-iconR {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    border-radius: 36px;
+                    padding: 12px 16px;
+                    height: 40px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:after {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+                &-iconL {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    border-radius: 36px;
+                    padding: 12px 16px;
+                    height: 40px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:before {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-right: 20px;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+                &-icon {
+                    background: $color-button;
+                    color:$color-background-alt!important;
+                    border-radius: 36px;
+                    min-width: 40px;
+                    height: 40px;
+                     /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    &:after {
+                        content: $icon-secondary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin: 0 auto;
+                    }
+                    &:hover {
+                        background: $color-button-hover;
+                        border-color: $color-brand-two;
+                        color: $color-brand-one!important;
+                        transition: .3s;
+                    }
+                }
+            }
+            &-secondary {
+                background: $color-transparent;
+                border: $border-button;
+                border-radius: 36px;
+                padding: 12px 16px;
+                height: 40px;
+                width: max-content;
+                /* Button Inner */
+                @include flex-nowrap(inline-flex, row, center, center, center);
+                font-style: $font-style-normal;
+                font-size: $font-size;
+                line-height: $line-height;
+                letter-spacing: 0.016em;
+                &:hover {
+                    background: $color-button;
+                    border-color: $color-button;
+                    color: $color-background!important;
+                    transition: .3s;
+                }
+                &-iconR {
+                    background: $color-transparent;
+                    border: $border-button;
+                    border-radius: 36px;
+                    padding: 12px 16px;
+                    height: 40px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:after {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;
+                    }
+                }
+                &-iconL {
+                    background: $color-transparent;
+                    border: $border-button;
+                    border-radius: 36px;
+                    padding: 12px 16px;
+                    height: 40px;
+                    width: max-content;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    letter-spacing: 0.016em;
+                    &:before {
+                        content: $icon-primary;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin-right: 20px;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;
+                    }
+                }
+                &-icon {
+                    background: $color-transparent;
+                    border: $border-button;
+                    border-radius: 36px;
+                    min-width: 40px;
+                    height: 40px;
+                    /* Button Inner */
+                    @include flex-nowrap(inline-flex, row, center, center, center);
+                    font-style: $font-style-normal;
+
+                    font-size: $font-size;
+                    &:after {
+                        content: $icon-secondary-alt;
+                        color: $color-brand-one;
+                        font-size: $font-size;
+                        font-family: $font-family-icon;
+                        font-style: $font-style-normal;
+                        margin: 0 auto;
+                    }
+                    &:hover {
+                        background: $color-button;
+                        border-color: $color-button;
+                        color: $color-background!important;
+                        transition: .3s;
+                    }
+                }
+            }
+
+        }
+    }
+    &__text {
+        font-style: $font-style-normal;
+        font-size: $font-size;
+        line-height: $line-height;
+        letter-spacing: 0.016em;
+        &:hover {
+                    
+        }
+    }
+    &__top {
+        background-color: $color-footer;
+        border-radius: 6px;
+        bottom: 120px;
+        display: inline-block;
+        height: 48px;
+        text-align: center;
+        transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+        opacity: 0;
+        position: fixed;
+        right: 180px;
+        visibility: hidden;
+        width: 48px;
+        z-index: 1000;
+      &::after {
+        content: "\ea76";
+        font-family: remixicon;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: $color-brand-two;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: $color-brand-two;
+      }
+      &:active {
+        background-color: $color-brand-one-second;
+      }
+    }
+}

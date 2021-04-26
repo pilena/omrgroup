@@ -1,0 +1,28 @@
+.social {
+    @include flex(flex, row, wrap, flex-start, center);
+    font-family: $font-family-alt;
+    width: 100%;
+    p,a {
+        margin: 0 8px;
+    }
+    a {
+        @include flex(inline-flex, row, wrap, center, center);
+        border-radius: 4px;
+        border: 1px solid $color-brand-one;
+        padding: 8px;
+        font-size: $font-size-small;
+        i {
+            margin-right: 8px;
+            font-size: $space-xxsm;
+        }
+        &:hover {
+            background: $color-brand-one;
+            color: $color-background;
+            transition: .3s;
+            i {       
+                color: $color-background;
+                transition: .3s;
+            }
+        }
+    }
+}

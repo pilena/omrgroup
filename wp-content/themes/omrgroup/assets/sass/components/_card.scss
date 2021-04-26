@@ -1,0 +1,49 @@
+.card {
+    &-image{
+        &__box {
+            box-shadow: $box-shadow;
+            position: relative;
+            min-height: 560px;
+            min-width: 348px;
+            margin: $space-xxsm;
+            z-index: 0;
+            @include breakpoint (xs) {
+                margin: 8px;
+            }
+            &-inner {
+                @include flex-nowrap(flex, column, flex-end, flex-start);
+                padding: $space-xxsm;
+                position: absolute;
+                bottom: 0;
+                z-index: 3;
+                h4,p {
+                    margin: $margin/4 0!important;
+                    color: $color-background;
+                }
+                span {
+                    font-weight: 300;
+                }
+                &--social {
+                   display: inline-flex;
+                   padding: $space-xsm 0;
+                   i {
+                     color: $color-background;
+                     font-size: $font-size;
+                   }
+                   a {
+                       margin-right:$space-xsm;
+                   }
+                }
+            }
+            &--gradient {
+                background-image: $color-gradient-deg;
+                bottom: 0;
+                filter: $box-shadow;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                z-index: 2;
+            }
+        }
+    }
+}

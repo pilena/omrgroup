@@ -1,0 +1,33 @@
+.section {
+    &-home {
+        &__blocks {
+            margin: 0px auto;
+            &-header {
+                h1{
+                    margin-bottom: 40px;
+                }
+            }
+
+            &-text {
+                color: $color-text-alt;
+                text-align: justify;
+            }
+        }
+
+    }
+
+    &-logo {
+        background-color: $color-footer;
+
+        &__blocks {
+            @include flex(flex, row, wrap, center, center);
+            padding-bottom: 64px;
+            margin: 0px auto;
+
+            &-single {
+                margin: 0px auto;
+                text-align: center;
+            }
+        }
+    }
+}
