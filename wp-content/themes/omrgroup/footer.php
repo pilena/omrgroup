@@ -1,7 +1,7 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
 				<div class="container">
-				<div id="media_image-4" class="widget_media_image"><img width="107" height="48" src="http://localhost/omrgroup/wp-content/uploads/2021/04/logo-white.png" class="image wp-image-16  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;"></div>
+				<div id="media_image-4" class="widget_media_image"><img width="107" height="48" src="http://omrgroup.test/wp-content/uploads/2021/04/logo-white.png" class="image wp-image-16  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;"></div>
 					<div class="row footer__widgets">
 						
 						<div class="col-lg-4 col-sm-6 col-xxs-12 footer__widgets-wrap footer__widgets-wrap--left">

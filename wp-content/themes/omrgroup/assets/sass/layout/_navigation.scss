@@ -88,13 +88,15 @@
 				background: $color-background;
 				top: 80px;
 				left: 0;
+				border-radius: 8px;
+				box-shadow: 0px 7.04161px 15.3294px rgba(67, 67, 67, 0.0752215), 0px 4.92415px 6.3357px rgba(67, 67, 67, 0.0444555), 0px 2.89319px 3.08708px rgba(67, 67, 67, 0.0185339), 0px 1.21701px 1.54994px rgba(67, 67, 67, 0.00421641);
 				position: absolute;
 				padding-left: 0!important;
 				visibility: hidden;
 				opacity: 0;
 				li {
 					justify-content: flex-start;
-					width: fit-content;
+					min-width: 204px;
 					a {
 						justify-content: flex-start;
 						color: $color-text!important;
@@ -104,9 +106,9 @@
 						}
 					}
 					&:hover {
-						background: $color-heading;
+						background: $color-background-alt;
 						a {
-							color: $color-brand-two!important;
+							color: $color-text!important;
 						}
 	
 						&::after  {
@@ -189,7 +191,7 @@
 	
 			transition-duration: .25s;
 			height: 2px;
-			width: 12px;
+			width: 18px;
 		}
 		> span::before,
 		> span::after {
@@ -228,7 +230,7 @@
 		
 		list-style: none;
 	
-		background-color: $color-brand-two;
+		background-color: $color-brand-one;
 		box-shadow: $box-shadow;
 
 		transition: .3s;
@@ -258,36 +260,31 @@
 		}
 	}
   li {
-	color: $color-heading;
+	color: $color-brand-two;
 	text-decoration: none;
 	a {
+		color: $color-brand-two!important;
 		display: block;
 		padding: 24px 72px;
 		height: 64px;
 		width: 100%;
 		font-style: $font-style-normal;
 		font-size: $font-size;
-		line-height: $line-height;
+		line-height: 1;
 		letter-spacing: 0.016em;
 	}
 	&:last-of-type {
-		background: $color-heading;
+		background: $color-brand-one;
 		a {
 			color: $color-brand-two!important;
 		}
 	}
   }
   .current-menu-item {
-	background: $color-brand-one-second;
+	background: $color-brand-one;
 	  a {
 		color: $color-brand-two!important;
 	  }
   }
-//   &__item {
-//     static
-//		a {
-//    	 static
-//		}
-// 	}
 
 }

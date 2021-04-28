@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'omr_db' );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'lenka' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'lenka123' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );

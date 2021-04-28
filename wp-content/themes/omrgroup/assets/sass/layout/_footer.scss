@@ -118,3 +118,13 @@
     }
 }
 
+footer.container {
+    @include breakpoint(md){
+        padding-left: 16px;
+    }
+}
+
+.widget_media_image{
+    padding-top: 80px;
+}
+

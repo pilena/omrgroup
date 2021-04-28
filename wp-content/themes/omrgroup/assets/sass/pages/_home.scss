@@ -1,10 +1,12 @@
 .section {
     &-home {
+        padding-bottom: 0px !important;
         &__blocks {
             margin: 0px auto;
             &-header {
-                h1{
+                h1 {
                     margin-bottom: 40px;
+                    text-transform: uppercase;
                 }
             }
 
@@ -12,8 +14,150 @@
                 color: $color-text-alt;
                 text-align: justify;
             }
+
+            &-author {
+                text-align: right;
+                padding: 0px 40px 40px 40px;
+                @include flex(flex, row, wrap, flex-end, center);
+
+                @include breakpoint(xxs){
+                    padding: 0px 0px 40px 0px;
+                }
+                // @include breakpoint (xs){
+                //     flex-flow: row;
+                // }
+
+                span {
+                    color: $color-acent;
+                    margin-left: 24px;
+                }
+            }
         }
 
+        &__contact {
+            padding-bottom: 24px;
+            padding-top: 72px;
+
+            &-heading {
+                margin: 0px auto;
+                @include flex(flex, row, wrap, center, center);
+                h5 {
+                    margin: 0px;
+                    text-align: center;
+                    color: $color-acent;
+                    padding: 0px 16px 0px 16px;
+                }
+            }
+
+            &-info {
+                color: #fff;
+                margin: 0px auto;
+                @include flex(flex, row, wrap, space-evenly, center);
+            }
+        }
+    }
+
+    &-hero {
+        padding-top: 168px;
+
+        &__blocks {
+            @include flex(flex, row, wrap, flex-start, flex-end);
+            margin: 0px auto;
+            height: 515px;
+
+            &-links {
+                color: $color-acent;
+                @include flex(flex, row, wrap, flex-start, center);
+
+                span {
+                    padding-right: 16px;
+                }
+            }
+        }
+    }
+
+    &-about {
+        &__blocks {
+            @include flex(flex, row, wrap, space-between, flex-start);
+            margin: 0px auto;
+
+            &-text {
+                text-align: justify;
+            }
+
+            &-info {
+                background-color: $color-background;
+                box-shadow: $box-shadow;
+                border-radius: 4px;
+                padding: 0;
+
+                ul {
+                    padding: 40px;
+                    margin: 0;
+
+                    li {
+                        @include flex(flex, row, wrap, flex-start, center);
+                        padding-bottom: 24px;
+
+                        i {
+                            color: $color-acent;
+                            margin-right: 16px;
+
+                            &:after {
+                                border-right: 1px solid #c4a862;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+
+            &-pad {
+
+                &:nth-child(odd){
+                    padding: 0px 20px 0px 0px;
+                }
+                
+                &:nth-child(even){
+                    padding: 0px 0px 0px 20px;
+
+                    @include breakpoint (xs){
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+
+        &__ost {
+            @include flex(flex, row, wrap, center, center);
+
+            @include breakpoint(xs){
+                flex-flow: column;
+            }
+            height: auto;
+
+            &-quote {
+                left:-40px;
+
+                @include breakpoint(xs){
+                    left: 0;
+                }
+
+                h3 {
+                    color: $color-text;
+                    padding: 40px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &-omr {
+        padding: 200px 0px 184px 0px;
     }
 
     &-logo {
@@ -21,13 +165,29 @@
 
         &__blocks {
             @include flex(flex, row, wrap, center, center);
-            padding-bottom: 64px;
             margin: 0px auto;
+            padding-top: 32px;
+            padding-bottom: 24px;
 
             &-single {
                 margin: 0px auto;
                 text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
+
+        }
+    }
+
+    &-ost {
+        padding: 136px 0px 0px 0px;
+    }
+
+    &-last {
+        padding: 80px 0px 136px 0px;
+        &__blocks {
+            margin: 0px auto;
         }
     }
 }
